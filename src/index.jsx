@@ -1,9 +1,9 @@
 import * as React from "react";
 import { render } from "react-dom";
 
-let BalanceSheet = undefined;
-
 export function setup(api) {
+  let BalanceSheet = undefined;
+
   api.registerPage("/", {
     bootstrap: () =>
       import("./BalanceSheet").then((content) => {
